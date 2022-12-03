@@ -10,3 +10,8 @@ class ShowBlog(BaseModel):
     additional_information : str = "You can read more information here"
     class Config:
         orm_mode=True
+
+class User(BaseModel):
+    name:str
+    email:str
+    password:str
